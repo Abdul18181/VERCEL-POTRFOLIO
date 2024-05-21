@@ -74,89 +74,76 @@ cursor: pointer;
     border: 1px solid  rgb(37,169,224);
 }
 #hero{
-    height: 700px;
+    /* position: absolute; */
+    /* top: 0; */
+    height: 600px;
 width: 100%;
 display: flex;
 justify-content: center;
-align-items: center;    
+align-items: center;  
+background-color: #25A9E0;  
 }
 .hero{
-    position: absolute;
-    top: 0;
-    height: 80%;
+    height: 100%;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: black;
+}
+.hero-video{
+    height: 100%;
+   width: 100%; 
+}
+.hero-video video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 
-
-
-.inner-hero {
-    background: url(careeimages/image.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 800px;
-    width: 100%;
-}
 .hero-layer{
     height: 100%;
     width: 100%;
-    background-color: rgba(19, 30, 56, 0.548);
+    position: absolute;
+    top: 0;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
 }
-.hero-text{
- display: flex;
- flex-direction: column;
- width: 500px;
- position: relative;
- top: 80px;
- /* height: 400px; */
- align-items: center;
- text-align: center;
- gap: 20px;
+.hero-layer .hero-text{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    gap: 30px;
+    width: 40%;
+    text-align: center;
+}
+.hero-layer .hero-text h2
+{
+    font-size: 40px;
+    color: white;
+}
+.hero-layer .hero-text span{
+    font-size: 20px;
+    color: white;
 }
 
-
-
-.hero-text h2{
-        font-size: 40px;
-        color: white;
-     
-}
-.hero-text button{
+.hero-layer .hero-text button{
+    width: 170px;
     height: 50px;
-    width: 150px;
     background-color: #25A9E0;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
+}
+.hero-layer .hero-text button {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 10px;
+    font-size: 20px;
     color: white;
-    font-size: 19px;
+    margin-right: 20px;
 }
-.hero-text button img{
+.hero-layer .hero-text button img{
     height: 25px;
-    width: 25px;
 }
-.hero-text span{
-    font-size: 19px;
-    color: white;
-}
-
-
-
-
-
 #services{
     height: 990px;
     width: 100%;
@@ -970,7 +957,7 @@ color: rgb(50,50,50);
 #side{
     height: 200px;
     width: 100px;
-    background-color: rgba(0, 0, 0, 0.568);
+    background-color: rgba(65, 56, 56, 0.568);
     position: fixed;
     top: 80px;
     right: 0;
