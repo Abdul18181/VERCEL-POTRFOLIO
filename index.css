@@ -496,7 +496,7 @@ padding-left: 2px;
 
 
 #footer{
-    height: 400px;
+    /* height: 400px; */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -505,16 +505,8 @@ padding-left: 2px;
     background-color: rgb(10,22,51);
     padding: 30px;
 }
-.footer{
-    height: 70%;
-    width: 75%;
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    justify-content: space-between;
-    align-items: start;
-}
-.footer .links .foot-logo img{
+
+#footer .col .foot-logo img{
     height: 100px;
     width: 150px;
     object-fit: cover;
@@ -565,13 +557,18 @@ h5{
     justify-content: center;
     align-items: end;
     color: white;
-    font-size: 20ps;
+    background-color: rgb(10,22,51);
+    font-size: 20px;
 }
 
 
+footer .col  {
+    color: white;
+}
 
-
-
+footer .col ul li a{
+    color: white;
+}
 
 
 
@@ -861,7 +858,7 @@ text-align: center;
     align-items: center;
 }
 .blogss{
-height: 90%;
+height: 100%;
 width: 80%;
 display: flex;
 justify-content: center;
