@@ -1,6 +1,6 @@
 let header  = document.getElementById('header')
 let nav = document.querySelector('.logo img')
-let btn = document.querySelectorAll('.btn')
+let btn = document.querySelectorAll('.nav-link')
 let button = document.querySelector('.li-item button')
 
 

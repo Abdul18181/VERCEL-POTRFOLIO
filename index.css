@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 #header{
-    height: 80px;
+height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -30,12 +30,10 @@ height: 80px;
 width: 80px;
 object-fit: contain;
 }
-#header #nav .nav-links{
-    width: 49%;
-}
+
 #header #nav .nav-links ul{
     display: flex;
-    /* width: 70%; */
+    width: 50%;
     justify-content: space-between;
     align-items: center;
 }
@@ -50,7 +48,7 @@ object-fit: contain;
 #header #nav .nav-links ul li a.active {
     color: black;
 }
-#header #nav .nav-links ul li button{
+#header #nav .nav-links ul li .btn{
     height: 50px;
     width: 150px;
     background: transparent;
@@ -60,11 +58,11 @@ border: 1px solid rgb(255, 255, 255);
 cursor: pointer;
 }
 
-#header #nav .nav-links ul li button.active {
+#header #nav .nav-links ul li .btn.active {
     border: 2px solid  rgb(37,169,224);
     color:  rgb(37,169,224);
 }
-#header #nav .nav-links ul li button:hover{
+#header #nav .nav-links ul li .btn:hover{
     background-color: rgb(37,169,224);
     color: white;
 
@@ -73,10 +71,11 @@ cursor: pointer;
     border-radius: 5px;
     border: 1px solid  rgb(37,169,224);
 }
+
 #hero{
     /* position: absolute; */
     /* top: 0; */
-    height: 600px;
+    height: 650px;
 width: 100%;
 display: flex;
 justify-content: center;
@@ -84,36 +83,37 @@ align-items: center;
 background-color: #25A9E0;  
 }
 .hero{
-    height: 100%;
+    height: 650px;
     width: 100%;
-    background-color: black;
+
 }
 .hero-video{
-    height: 100%;
+    height: 650px;
    width: 100%; 
 }
 .hero-video video{
-    height: 100%;
+    height: 650px;
     width: 100%;
     object-fit: cover;
 }
 
 
-.hero-layer{
-    height: 100%;
+.hero-layer {
+    height: 650px;
     width: 100%;
     position: absolute;
     top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background-color: rgba(0, 0, 0, 0.856); */
 }
-.hero-layer .hero-text{
+.hero-layer .hero-text {
     display: flex;
     flex-direction: column;
-   align-items: center;
+    align-items: center;
     gap: 30px;
-    width: 40%;
+    width: 50%;
     text-align: center;
 }
 .hero-layer .hero-text h2
@@ -125,7 +125,7 @@ background-color: #25A9E0;
     font-size: 20px;
     color: white;
 }
-
+ 
 .hero-layer .hero-text button{
     width: 170px;
     height: 50px;
@@ -145,11 +145,12 @@ background-color: #25A9E0;
     height: 25px;
 }
 #services{
-    height: 990px;
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 
@@ -163,35 +164,27 @@ background-color: #25A9E0;
     gap: 10px;
 }
 
-#services .services .services-cards{
-    height: 900px;
-    /* background-color: black; */
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-#services .services .services-cards .service-card{
-    height: 400px;
-    width: 400px;
+
+#services  .service-card{
+    /* height: 400px; */
+    /* width: 300px; */
     padding: 30px;
-    background-color: white;
+    /* background-color: rgb(0, 0, 0); */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     text-align: center;
+    text-align: center;
     border-radius: 2px;
 }
-#services .services .services-cards .service-card:hover{
+#services .service-card:hover{
     border:1px solid #25A9E0  ;
     box-shadow:  0 0 12px 2px rgba(190, 190, 190, 0.603) ;
 }
-#services .services .services-cards .service-card .service-card-heading{
+#services .service-card-heading{
  h2{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
  }   
 }
@@ -224,7 +217,7 @@ color:rgb(50,50,50) ;
 
 
 #contact{
-    height: 700px;
+    height: 660px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -324,35 +317,35 @@ margin-right: 40px;
 
 
 .contact{
-    height: 650px;
+    height: 600px;
     width: 80%;
     box-shadow: 0px 0px 12px 2px rgb(175, 175, 175);
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
+
     padding: 10px;
     border-radius: 10px;
 }
 .contact .contact_1{
-    width: 60%;
+    
     display: flex;
 flex-direction: column;
     justify-content: center;
     align-items: start;
     height: 80%;
-    gap: 30px;
+    width: 100%;
+    /* gap: 30px; */
     padding: 20px;
 }
-input,textarea{
+.contact .contact_1 input,textarea{
     outline: none;
     border: none;
+    border-bottom: 1px solid gray;
 }
 
 
 
-.contact .contact_2{
-    width: 35%;
-    height: 100%;
+.contact_2{
+    width: 100%;
+    height: 90%;
     background-color: rgb(10,22,51);
     border-radius: 10px;
     display: flex;
@@ -374,7 +367,7 @@ object-fit: cover;
     font-size: 30px;
 }
 .contact-form{
-    height: 500px;
+    /* height: 500px; */
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -596,7 +589,8 @@ align-items: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+
+    /* gap: 50px; */
 }
 .projects-heading{
     h2{
@@ -612,24 +606,21 @@ align-items: center;
 
 
 
-#projects{
-    height: 800px;
-    width: 100%;
-}
 .projects{
-padding: 0;
+/* padding: 0;
 gap: 0;
     display: grid;
     grid-template-columns: repeat(2,50%);
-    grid-template-rows: repeat(2,400px);
+    grid-template-rows: repeat(2,400px); */
 }
 .project{
     position: relative;
-    background-color: blueviolet;
+    background-color: rgb(0, 0, 0);
     overflow: hidden;
- 
+ height: 500px;
 }
 .project .project-img img{
+    /* object-fit:  contain; */
     height: 500px;
     width: 100%;
 }
@@ -643,6 +634,7 @@ gap: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     color: white;
     text-align: center;
 visibility: hidden;
@@ -650,6 +642,7 @@ transition-property:height;
 transition-delay: .2s;
 transition-duration: .2s;
 transition-timing-function: linear;
+padding:0 40px;
 }
 .project .project-text img{
     height: 120px;
@@ -676,24 +669,34 @@ transition-timing-function: linear;
 
 
 
-
+/* 
 
 #certification{
-    height: 300px;
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .certification{
-    height: 200px;
+    height:auto;
     width: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     gap: 30px;
+
 }
+
+.certification-content{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    /* height: 150px; */
+/* }*/ */
+
+
 .certification-heading{
     height: 100px;
     width: 100%;
@@ -702,18 +705,11 @@ transition-timing-function: linear;
         font-size: 40px;
     }
 }
-.certification-content{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 150px;
+
+
+#certification .certification .certification-content .card img{
+    height: 100px;
 }
-
-
-
-
-
-
 
 
 
@@ -837,10 +833,29 @@ text-align: center;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #blogss{
     background-color: #F0F7FA;
-    height:145vh;
+    height:auto;
     width: 100%;
+    padding: 40px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -863,19 +878,18 @@ color: rgb(50,50,50);
 .blogss-card {
     width: 80%;
 }
-.blogss-card1 .blogss-card{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 350px;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    background-color: white;
-    border-radius: 10px;
+.blogss-card1 .card{
+    border: none;
+
+
 
 }
-.blogss-card1 .blogss-card .blogss-card-heading{
+.blogss-card1 .card:hover{
+    box-shadow: 0 0 20px 5px rgb(219, 219, 219);
+}
+/* 
+
+.blogss-card1 .card .blogss-card-heading{
     display: flex;
     justify-content: start;
     flex-direction: column;
@@ -883,23 +897,21 @@ color: rgb(50,50,50);
     padding-left: 80px;
     gap: 10px;
 }
-.blogss-card1 .blogss-card .blogss-card-heading h2{
+.blogss-card1 .card .blogss-card-heading h2{
     font-size: 30px;
     font-weight: 800;
 }
-.blogss-card1 .blogss-card .blogss-card-heading span{
+.blogss-card1 .card .blogss-card-heading span{
     font-size: 20px;
 }
-.blogss-card1 .blogss-card:hover{
-    box-shadow: 0 0 20px 5px rgb(219, 219, 219);
-}
+
 .blogss-cards{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 20px;
     height: 800px;
-}
+} */
 .blogss-card{
     height: 400px;
     /* width: 100%; */
@@ -908,37 +920,35 @@ color: rgb(50,50,50);
 .blogss-cards .blogss-card2{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 10px;
 }
-.blogss-cards .blogss-card2 .blogss-card{
-    height: 400px;
+.blogss-cards .blogss-card2 .card{
+    height: 350px;
     border: 20px;
-    width: 400px;
+    /* width: 400px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
     border-radius: 13px;
 }
-.blogss-cards .blogss-card2 .blogss-card .imgss{
-    height: 250px;overflow: hidden;
+
+.blogss-cards .blogss-card2 .card img{
+    object-fit: cover;
+    height: 200px;
     width: 100%;
 }
-.blogss-cards .blogss-card2 .blogss-card .imgss img{
-    object-fit: contain;
-    /* height: 200px; */
-    /* width: 100%; */
-}
-.blogss-card2 .blogss-card{
+.blogss-card2 .card{
     background-color: white;
     border-radius: 5px;
 }
 
-.blogss-card2 .blogss-card:hover{
+.blogss-card2 .card:hover{
     box-shadow: 0 0 20px 2px rgba(187, 187, 187, 0.63);
 }
-.blogss-card2 .blogss-card .blogss-content{
+.blogss-card2 .card .card-body{
     text-align: start;
     height: 100px;
     display: flex;
@@ -977,4 +987,364 @@ color: rgb(50,50,50);
     height: 40px;
     width: 50px;
     cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:992px) {
+    
+    
+#testimonal{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonal{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+.testimonal-card{
+    height: 70%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 10px 1px rgb(211, 211, 211);
+}
+.testimonal-card .testimonal-card-1 {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.testimonal-card .testimonal-card-1  .testimonal-first-card{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+   
+
+
+}
+.testimonal-card .testimonal-card-1  .testimonal-first-card span{
+    font-size: 18px;
+}
+.testimonal-card .testimonal-card-1  .testimonal-second-card{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.testimonal-card .testimonal-card-1  .testimonal-second-card .img img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+.testimonal-card .testimonal-card-1  .testimonal-second-card .text{
+    h2{
+        font-size: 18px;
+    }
+    span{
+        font-size: 15px;
+    }
+}
+
+.testimonal-card-2{
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    width: 14%;
+    justify-content: space-between;
+    align-items: center;
+    button{
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+border: none;
+font-size: 17px;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+    }
+}
+.testimonal-card-2 button:nth-child(1){
+    background-color:rgb(37,169,224);
+}
+.testimonal-card-2 button:nth-child(2):hover{
+    background-color: rgb(37,169,224);
+}
+
+
+.testimonal-card-heading h2{
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+@media screen and (max-width:600px) {
+    .hero-layer .hero-text{
+        width: 80%;
+    }
+    
+    
+#testimonal{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonal{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+.testimonal-card{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 10px 1px rgb(211, 211, 211);
+}
+.testimonal-card .testimonal-card-1 {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.testimonal-card .testimonal-card-1  .testimonal-first-card{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+   
+
+
+}
+.testimonal-card .testimonal-card-1  .testimonal-first-card span{
+    font-size: 18px;
+}
+.testimonal-card .testimonal-card-1  .testimonal-second-card{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.testimonal-card .testimonal-card-1  .testimonal-second-card .img img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+.testimonal-card .testimonal-card-1  .testimonal-second-card .text{
+    h2{
+        font-size: 18px;
+    }
+    span{
+        font-size: 15px;
+    }
+}
+
+.testimonal-card-2{
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    width: 14%;
+    justify-content: space-between;
+    align-items: center;
+    button{
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+border: none;
+font-size: 17px;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+    }
+}
+.testimonal-card-2 button:nth-child(1){
+    background-color:rgb(37,169,224);
+}
+.testimonal-card-2 button:nth-child(2):hover{
+    background-color: rgb(37,169,224);
+}
+
+
+.testimonal-card-heading h2{
+    font-size: 30px;
+}
+
+
+}
+@media screen and (max-width:480px) {
+    
+    
+#testimonal{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+.testimonal{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 40px;
+}
+.testimonal-card{
+    height: 88%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 10px 1px rgb(211, 211, 211);
+}
+.testimonal-card .testimonal-card-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.testimonal-card .testimonal-card-1  .testimonal-first-card{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+   
+
+
+}
+.testimonal-card .testimonal-card-1  .testimonal-first-card span{
+    font-size: 18px;
+}
+.testimonal-card .testimonal-card-1  .testimonal-second-card{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.testimonal-card .testimonal-card-1  .testimonal-second-card .img img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+.testimonal-card .testimonal-card-1  .testimonal-second-card .text{
+    h2{
+        font-size: 18px;
+    }
+    span{
+        font-size: 15px;
+    }
+}
+
+.testimonal-card-2{
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    width: 14%;
+    justify-content: space-between;
+    align-items: center;
+    button{
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+border: none;
+font-size: 17px;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+    }
+}
+.testimonal-card-2 button{
+    display: none;
+}
+.testimonal-card-2 button:nth-child(1){
+    background-color:rgb(37,169,224);
+}
+.testimonal-card-2 button:nth-child(2):hover{
+    background-color: rgb(37,169,224);
+}
+
+
+.testimonal-card-heading h2{
+    font-size: 35px;
+}
+
+
 }
