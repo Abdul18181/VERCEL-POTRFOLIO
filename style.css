@@ -72,7 +72,11 @@
         border: 1px solid  rgb(37,169,224);
     }
     
-
+    #header #nav .navbar-toggler{background-color: white;}
+    #header.active #nav  .navbar-toggler {
+       background-color: transparent;
+       color: white;
+    }
 #hero{
     /* position: absolute; */
     /* top: 0; */
@@ -746,7 +750,10 @@ padding-left: 2px;
 .contact .contact_2 .group1 .content .content-img {
 
 }
-
+.contact .contact_2 .group1 .img h5{
+    color: white;
+    font-size: 20px;
+}
 
 
 

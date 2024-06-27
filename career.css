@@ -1123,7 +1123,11 @@ footer .col ul li a{
 
 
 
-
+#header #nav .navbar-toggler{background-color: white;}
+#header.active #nav  .navbar-toggler {
+   background-color: transparent;
+   color: white;
+}
 
 
 
